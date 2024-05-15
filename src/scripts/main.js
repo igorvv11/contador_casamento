@@ -1,6 +1,6 @@
 AOS.init();
 
-const dataDoEvento = new Date("jun 12, 2024 19:00:00");
+const dataDoEvento = new Date("nov 23, 2024 11:00:00");
 const TimeStampDoEvento = dataDoEvento.getTime();
 
 const contaAsHoras = setInterval(function() {
@@ -21,7 +21,7 @@ const contaAsHoras = setInterval(function() {
 
     if (distanciaAteOEvento < 0) {
         clearInterval(contaAsHoras);
-        document.getElementById('contador').innerHTML = 'Evento expirado';
+        document.getElementById('contador').innerHTML = 'O casamento já foi realizado';
     }
 
 }, 1000)
